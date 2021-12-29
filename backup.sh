@@ -4,7 +4,11 @@
 find "/home/tino/Desktop/example" -mtime +3 -type f -exec rm -fv {} \;
 
 # backup of what files
-backup_files="/home/tino/Desktop/uloha"
+# backup_files="/home/tino/Desktop/uloha"
+
+#read from cfg file
+source /home/tino/Desktop/script/folder_set.config
+
 
 #where it is going to be stored
 dest="/home/tino/Desktop/example"
