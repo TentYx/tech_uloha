@@ -16,10 +16,10 @@ filename="backup_`date +%Y``date +%m``date +%d`.tar.gz";
 # backup_files="/home/tino/Desktop/uloha"
 
 #read from cfg file
-source $home_dir/script/folder_set.config
+#source $home_dir/script/folder_set.config
 
-#compress of file and move to folder where it is going to be stored
-tar cvf $home_dir/example/$filename $home_dir/uloha/
+#compress of file and move it to folder where it is going to be stored
+tar cvf $home_dir/example/$filename $home_dir/uloha/ -T folder_set.config
 
 #move to  backup folder
 cd $home_dir/example
